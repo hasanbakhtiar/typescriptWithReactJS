@@ -1,3 +1,8 @@
+import { Counter } from './state/Counter';
+import { CounterOne } from './state/CounterOne';
+import LoggedIn from './state/LoggedIn';
+import User from './state/User';
+import UserOne from './state/UserOne';
 import { BasicData } from './typingProps/BasicData';
 import BasicTypingProps from './typingProps/BasicTypingProps';
 const productList=[
@@ -21,8 +26,10 @@ const productList=[
 function App() {
   return (
     <div className="App">
-     <BasicTypingProps info="typescript" messageCount={10} isLoggegIn={true}/>
-     <BasicData product={productList}/>
+     {/* <BasicTypingProps info="typescript" messageCount={10} isLoggegIn={true}/>
+     <BasicData product={productList}/> */}
+     {/* <LoggedIn /> */}
+     <CounterOne />
     </div>
   );
 }
